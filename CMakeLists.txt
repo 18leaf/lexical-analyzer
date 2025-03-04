@@ -7,6 +7,8 @@ add_executable(lexical_analyzer src/main.c
         include/token.h
         src/token.c
         include/scanner.h
-        src/scanner.c)
+        src/scanner.c
+        src/utils.c
+        include/utils.h)
 
 

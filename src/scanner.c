@@ -10,10 +10,8 @@
 
 // temp array to store tokens
 // already created extern in scanner.h
-struct token tokens[TOKEN_ARRAY_SIZE];
 
-
-int run_scanner(FILE *file) {
+int run_scanner(FILE *file, TrieNode *keywordTrie) {
 	// count/save position of token
 	int token_pos = 0;
 
@@ -137,6 +135,13 @@ int run_scanner(FILE *file) {
 						break;
 				}
 				if (ended) {
+
+					if (current_token_type == IDENTIFIER) {
+						if (is_keyword(keywordTrie, token_string_buffer)) {
+							current_token_type = KEYWORD;
+						}
+					}
+
 					set_token_string(&tokens[token_pos], token_string_buffer);
 					set_token_type(&tokens[token_pos], current_token_type);
 					is_first = true;
@@ -157,4 +162,8 @@ int run_scanner(FILE *file) {
 	return token_pos;
 };
 
-
+// return true if is keyword
+bool is_keyword(TrieNode* keywordTrie, const char word[TOKEN_STRING_SIZE]) {
+	// see utils.c for below implementation
+	return search(keywordTrie, word);
+}

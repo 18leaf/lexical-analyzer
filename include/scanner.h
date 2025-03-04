@@ -12,11 +12,13 @@
 // if first is
 #include <stdio.h>
 #include "../include/token.h"
+#include "../include/utils.h"
 
 
 extern struct token tokens[TOKEN_ARRAY_SIZE];
 
-int run_scanner(FILE *file);
+int run_scanner(FILE *file, TrieNode* keywordTrie);
+bool is_keyword(TrieNode* keywordTrie, const char word[TOKEN_STRING_SIZE]);
 
 
 
