@@ -69,7 +69,7 @@ lexical_analyzer/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/18leaf/lexical-analyzer.git
    cd lexical_analyzer
    ```
 
