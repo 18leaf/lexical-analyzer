@@ -22,6 +22,7 @@ static const char *keywords[] = {
 
 
 static void print_tokens(const int token_count) {
+	// format tokens in 1 line if they were in a line in original text
 	for (int i = 0; i < token_count - 1; i++) {
 		if (tokens[i].line_number != tokens[i + 1].line_number) {
 			print_token(&tokens[i]);
@@ -34,6 +35,7 @@ static void print_tokens(const int token_count) {
 };
 
 TrieNode* populate_keyword_table(void) {
+	// adds keywords to trie for search
 	TrieNode* keywordTrie = create_trie_node('\0');
 	for (int i = 0; i < NUM_KEYWORDS; i++) {
 		// add to trie
@@ -43,15 +45,30 @@ TrieNode* populate_keyword_table(void) {
 };
 
 
-int main(void) {
+int main(const int argc, char *argv[]) {
 	// initialize trie for keyword lookup table
 	TrieNode* keywordTrie = populate_keyword_table();
+	char* filename;
+	if (argv[1] == NULL && argc > 0) {
+		filename = "test.txt";
+	}
+	else {
+		// set filename to given arg
+		filename = argv[1];
+	}
+
 
 	// open the source for analyzing (read from txt)
-	FILE *file_ptr = fopen("test.txt", "r");
+	FILE *file_ptr = fopen(filename, "r");
+
+	if (file_ptr == NULL) {
+		// failed to open file
+		printf("File not found\n");
+		return 0;
+	}
 
 
 	const int token_count = run_scanner(file_ptr, keywordTrie);
 	print_tokens(token_count);
-	return 0;
+	return 1;
 }

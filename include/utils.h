@@ -23,7 +23,7 @@ struct TrieNode {
 TrieNode* create_trie_node(const char data);
 void free_trie_node(TrieNode* node);
 void insert(TrieNode* root, const char* word);
-bool search(TrieNode* root, const char* word);
+bool search(const TrieNode* root, const char* word);
 
 
 

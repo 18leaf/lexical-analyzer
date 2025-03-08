@@ -1,83 +1,110 @@
-TOKEN SET COMMENT
 
-	Token Set -> For projectpart1
+# CS 4308 Project 1 – Lexical Analyzer in C
 
-		KEYWORDS -> only from example code for now
-			PYTHON -> see identifiers logic
-				def,
+This project implements a lexical analyzer in C that tokenizes an input file 
+into identifiers, keywords, numeric literals, string literals, operators, 
+and punctuation (From a subset of Python and Java). A trie data structure is used for 
+efficient keyword lookup. The analyzer supports token sets based on both Python and Java rules.
+It handles Python and Java interchangeably, there is no distinction between code that is python or java yet.
 
-			JAVA
-				public, class, static, void, int, String
+---
 
+## Overview
 
-		IDENTIFIERS -> rules
-			PYTHON -> from https://www.geeksforgeeks.org/python-tokens-and-character-sets/#
-				START WITH:   a-Z or _
-				CAN HAVE: 0-9, a-Z, _, (digits cannot be first letter)
-				CAN NOT BE: keyword
+This project demonstrates:
+- **Lexical Analysis:** Scanning input files and breaking them down into tokens.
+- **Trie-Based Keyword Lookup:** Efficient insertion, search, and deletion for keywords.
+- **Token Classification:** Identifying tokens based on rules for identifiers, keywords, literals, operators, and punctuation.
+- **Modular Code Structure:** Separation of functionality across multiple source and header files.
 
-				IS CASE SENSITIVE
-
-				LOGIC:
-				if first of this is a-Z or _
-					until this ends (punctuation OR whitespace)
-						check for digits, letters, _
-					check in keyword
-
-			JAVA -> from https://www.geeksforgeeks.org/java-tokens/
-				START WITH: a-Z or _
-				CAN HAVE: 0-9, _, a-Z
-
-
-
-		LITERALS
-			PYTHON ** not needed for this project
-				Numerical
-					integer, float,
-
-				String/Char
-					start with ' or ", end with " or '
+### Token sets include:
+- **Keywords:**  
+  - *Python:* `def`, `print`  
+  - *Java:* `public`, `class`, `static`, `void`, `int`, `String`
+- **Identifiers:**
+    - **Start With:** `A-z`, `_`
+    - **Can Contain:** `0–9`, `A-z`, `_`
+    - **Ends With:** `Punctuation`, `Whitespace`
+- **Literals:**  
+  - *Python:* Numerical (integer, float) and string literals (enclosed in `'` or `"`).  
+  - *Java:* Numeric literals include integers (only digits) and decimals (begin with a digit or a period and contain a single decimal point).
+- **Operators:** `=`, `+`
+- **Punctuation:**  
+  - *Python:* `(`, `)`, `,`, `:`  
+  - *Java:* `{`, `}`, `(`, `)`, `[`, `]`, `,`, `;`
 
 
-			JAVA
-				Numeric
-					Integer: start with 0-9 and has only digits
-					Decimal: start with either 0-9 OR . and contains only 1 decimal
+## Project Structure
 
-		OPERATORS:
-			PYTHON:
-				=, +
+```
+lexical_analyzer/
+├── CMakeLists.txt                # build instructions
+├── README.md
+├── .gitignore
+├── files/
+│   └── test.txt
+├── include/
+│   ├── main.h                    # entry point, defines keywords, open file, call scanner
+│   ├── scanner.h
+│   ├── token.h
+│   └── utils.h
+└── src/
+    ├── main.c                    
+    ├── scanner.c                 # scans input, assigns tokens
+    ├── token.c
+    └── utils.c                   # trie implementation for keywords
+```
 
-			JAVA
-				=, +
 
+---
 
-		PUNCTUATION:
-			PYTHON
-				(, ), ,, :,
+## Installation
 
-			JAVA
-			{, }, (, ), [, ], ,, ;
+### Prerequisites
 
+- **C Compiler:** GCC or Clang
+- **CMake:** Version 3.10 or higher
 
-		REQUIREMENTS:
-			PYTHON
-				def add_numbers(num1, num2):
-					sum = num1 + num2
-					print('Sum: ',sum)
+### Build Instructions
 
-			JAVA
-				public class JavaExample {
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd lexical_analyzer
+   ```
 
-				  public static void main(String[] args) {
+2. Create a build directory and run CMake:
+   ```bash
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ```
 
-					int num1 = 5, num2 = 15,sum;
+3. Run the executable:
+    - Default mode uses `files/test.txt` as input:
+      ```bash
+      ./lexical_analyzer
+      ```
+    - Or provide a custom input file:
+      ```bash
+      ./lexical_analyzer your_file.txt
+      ```
 
-				sum = num1+num2;
+---
 
-				System.out.println("Sum of "+num1+" and "+num2+" is: "+sum);
+## Features
 
-				  }
+- **Lexical Analysis:**
+    - Reads input from a text file, processes it line by line, and generates tokens based on specific character patterns.
+    - TODO: 
+      - Create functions for identifying chars instead of large if statements
+      - Distinguish between Python and Java, highlight errors inline
+ 
+- **Trie-Based Keyword Lookup:**
+    - Implements a trie in `utils.c` for storing keywords, with efficient insertion and recursive deallocation.
+  
+- **Tokenization:**
+    - The scanner in `scanner.c` processes the input to classify tokens, while `token.c` handles token initialization, assignment, and printing.
 
-				}
-	TOKEN SET
+---
