@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../include/scanner.h"
 #include "../include/utils.h"
-
+//#include "../include/descent-parser.h"
 
 struct token tokens[TOKEN_ARRAY_SIZE];
 // define keywords(only using example for now)
@@ -9,13 +9,17 @@ static const char *keywords[] = {
 	// python keywords
 	"def",
 	"print",
+  "if",
+  "else",
+  "elif",
+  "return"
 
-	// java
+	/* java out for the recursive descent parse for python
 	"public",
 	"class",
 	"static",
 	"void",
-	"int"
+	"int" */
 };
 // num of keywords for loops
 #define NUM_KEYWORDS sizeof(keywords)/sizeof(const char *)
@@ -70,5 +74,12 @@ int main(const int argc, char *argv[]) {
 
 	const int token_count = run_scanner(file_ptr, keywordTrie);
 	print_tokens(token_count);
+
+
+  // recursive descent parser
+  // pass reference to global variable
+  // return false if error, true if not
+  printf("\n");
+
 	return 1;
 }

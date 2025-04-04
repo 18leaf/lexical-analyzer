@@ -1,0 +1,51 @@
+#include "../include/token.h"
+/*
+  if:
+    stmt
+  else:
+    stmt
+  elif:
+    stmt
+ * */
+
+/*
+ *
+KEYWORD[def]1:0 | IDENTIFIER[main]1:4 | PUNCTUATION[(]1:8 | PUNCTUATION[)]1:9 | PUNCTUATION[:]1:10
+
+IDENTIFIER[x]3:2 | OPERATOR[=]3:4 | NUM_LITERAL[20]3:6
+
+KEYWORD[print]4:2 | PUNCTUATION[(]4:7 | IDENTIFIER[x]4:8 | PUNCTUATION[)]4:9
+
+KEYWORD[if]6:2 | IDENTIFIER[x]6:5 | PUNCTUATION[>]6:7 | NUM_LITERAL[20]6:9 | PUNCTUATION[:]6:11
+
+KEYWORD[print]7:4 | PUNCTUATION[(]7:9 | STR_LITERAL["Greater than 20"]7:10 | PUNCTUATION[)]7:27
+
+KEYWORD[elif]8:2 | IDENTIFIER[x]8:7 | OPERATOR[=]8:9 | OPERATOR[=]8:10 | NUM_LITERAL[21]8:12 | PUNCTUATION[:]8:14
+
+KEYWORD[print]9:4 | PUNCTUATION[(]9:9 | STR_LITERAL["21"]9:10 | PUNCTUATION[)]9:14
+
+KEYWORD[else]10:2 | PUNCTUATION[:]10:6
+
+KEYWORD[print]11:4 | PUNCTUATION[(]11:9 | STR_LITERAL["Less Than 20"]11:10 | PUNCTUATION[)]11:24
+
+ * */
+
+
+
+bool descentParser(struct token **TOKEN_ARR)
+{
+  // iterate through array of tokens, searching specifically for the if stmts, validate after them as well
+  // TODO add checking for python whitespace
+  // if (expr):\n\t(stmt)
+  // elif^
+  // else:\n\t(stmt)
+  // Iterate over tokens, Wait For select Keywords -> INItialize a state for that statement, if any unexpected, throw error
+  // follow rules
+  
+  // START if -> wait for :\n\t
+  // if \n before : ERror
+  // if elif if, else, error
+  // must be if : stmt
+  //  
+
+}

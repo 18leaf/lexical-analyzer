@@ -1,0 +1,3 @@
+/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles/lexical_analyzer.dir
+/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles/edit_cache.dir
+/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles/rebuild_cache.dir

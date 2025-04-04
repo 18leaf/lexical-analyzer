@@ -15,6 +15,8 @@ enum ETokenType {
 	NUM_LITERAL,
 	STR_LITERAL,
 	PUNCTUATION,
+  INDENT,
+  NEW_LINE,
 	END
 };
 

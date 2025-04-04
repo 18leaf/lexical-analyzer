@@ -53,9 +53,12 @@ void print_token_type(const enum ETokenType token_type) {
     	case STR_LITERAL:
     		printf("STR_LITERAL");
     		break;
-    	case PUNCTUATION:
-    		printf("PUNCTUATION");
-    		break;
+    case PUNCTUATION:
+  		printf("PUNCTUATION");
+  		break;
+    case NEW_LINE:
+      printf("NEW_LINE");
+      break;
 		default:
 			printf("UNKNOWN");
     };

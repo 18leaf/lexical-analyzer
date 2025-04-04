@@ -40,7 +40,9 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 				// only relevant until lookup (keyword = identifier here)
 
 				// skip empty or spaces
-				if (line[char_pos] == ' ' || line[char_pos] == '\n') {
+				if (line[char_pos] == ' ') {  // -- previously here -- || line[char_pos] == '\n') {
+          //TODO check for indentation
+           
 					continue;
 				}
 				// first token_string_buffer = char of line position of first
@@ -60,9 +62,8 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 				else if (line[char_pos] >= '0'  && line[char_pos] <= '9' ) {
 					current_token_type = NUM_LITERAL;
 					tokens[token_pos] = init_token(line_number, lexeme_start);
-				}
-				// is it an operator
-				else if (line[char_pos] == '+' || line[char_pos] == '=') {
+				} // is it an operator
+        else if (line[char_pos] == '+' || line[char_pos] == '=') {
 					current_token_type = OPERATOR;
 					tokens[token_pos] = init_token(line_number, lexeme_start);
 				}
@@ -71,7 +72,8 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 					|| line[char_pos] == '.' || line[char_pos] == ';'
 					|| line[char_pos] == '(' || line[char_pos] == ')'
 					|| line[char_pos] == '{' || line[char_pos] == '}'
-					|| line[char_pos] == '[' || line[char_pos] == ']') {
+					|| line[char_pos] == '[' || line[char_pos] == ']'
+          || line[char_pos] == '<' || line[char_pos] == '>') {
 					current_token_type = PUNCTUATION;
 					tokens[token_pos] = init_token(line_number, lexeme_start);
 				}
@@ -80,6 +82,14 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 					current_token_type = STR_LITERAL;
 					tokens[token_pos] = init_token(line_number, lexeme_start);
 				}
+        // note this does not work, but leaving it
+        // c uses get line, so the \n char is not present, the line just terminates
+        // therefore outside of for loop, this must be used there
+        else if (line[char_pos] == '\n') {
+          current_token_type = NEW_LINE;
+          // init new line token
+          tokens[token_pos] = init_token(line_number, lexeme_start);
+        }
 
 				token_string_buffer[char_pos - lexeme_start] = line[char_pos];
 				is_first = false;
@@ -131,6 +141,9 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 							token_string_buffer[char_pos - lexeme_start] = line[char_pos];
 						}
 						break;
+          case NEW_LINE:
+            ended = true;
+            break;
 					default:
 						break;
 				}
@@ -154,9 +167,16 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 					for (int i = 0; i < TOKEN_STRING_SIZE; i++) {
 						token_string_buffer[i] = '\0';
 					}
-				}
+        }
 			}
 		}
+    // add newline token here
+    tokens[token_pos] = init_token(line_number, -1);
+    token_string_buffer[0] = 'n';
+    set_token_string(&tokens[token_pos], token_string_buffer);
+    set_token_type(&tokens[token_pos], NEW_LINE);
+    token_string_buffer[0] = '\0';
+    token_pos++;
 		line_number++;
 	};
 	return token_pos;
