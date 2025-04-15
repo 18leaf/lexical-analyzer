@@ -3,12 +3,15 @@ project(lexical_analyzer C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(lexical_analyzer src/main.c
+add_executable(lexical_analyzer_v2 src/main.c
         include/token.h
         src/token.c
         include/scanner.h
         src/scanner.c
         src/utils.c
-        include/utils.h)
+        include/utils.h
+         src/descent-parser.c
+         include/descent-parser.h
+     )
 
 

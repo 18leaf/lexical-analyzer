@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lexical_analyzer
+# Target rules for targets named lexical_analyzer_v2
 
 # Build rule for target.
-lexical_analyzer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lexical_analyzer
-.PHONY : lexical_analyzer
+lexical_analyzer_v2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lexical_analyzer_v2
+.PHONY : lexical_analyzer_v2
 
 # fast build rule for target.
-lexical_analyzer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/build
-.PHONY : lexical_analyzer/fast
+lexical_analyzer_v2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/build
+.PHONY : lexical_analyzer_v2/fast
+
+src/descent-parser.o: src/descent-parser.c.o
+.PHONY : src/descent-parser.o
+
+# target to build an object file
+src/descent-parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o
+.PHONY : src/descent-parser.c.o
+
+src/descent-parser.i: src/descent-parser.c.i
+.PHONY : src/descent-parser.i
+
+# target to preprocess a source file
+src/descent-parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.i
+.PHONY : src/descent-parser.c.i
+
+src/descent-parser.s: src/descent-parser.c.s
+.PHONY : src/descent-parser.s
+
+# target to generate assembly for a file
+src/descent-parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.s
+.PHONY : src/descent-parser.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -142,7 +166,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -150,7 +174,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/scanner.o: src/scanner.c.o
@@ -158,7 +182,7 @@ src/scanner.o: src/scanner.c.o
 
 # target to build an object file
 src/scanner.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/scanner.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o
 .PHONY : src/scanner.c.o
 
 src/scanner.i: src/scanner.c.i
@@ -166,7 +190,7 @@ src/scanner.i: src/scanner.c.i
 
 # target to preprocess a source file
 src/scanner.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/scanner.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.i
 .PHONY : src/scanner.c.i
 
 src/scanner.s: src/scanner.c.s
@@ -174,7 +198,7 @@ src/scanner.s: src/scanner.c.s
 
 # target to generate assembly for a file
 src/scanner.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/scanner.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.s
 .PHONY : src/scanner.c.s
 
 src/token.o: src/token.c.o
@@ -182,7 +206,7 @@ src/token.o: src/token.c.o
 
 # target to build an object file
 src/token.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/token.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o
 .PHONY : src/token.c.o
 
 src/token.i: src/token.c.i
@@ -190,7 +214,7 @@ src/token.i: src/token.c.i
 
 # target to preprocess a source file
 src/token.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/token.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/token.c.i
 .PHONY : src/token.c.i
 
 src/token.s: src/token.c.s
@@ -198,7 +222,7 @@ src/token.s: src/token.c.s
 
 # target to generate assembly for a file
 src/token.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/token.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/token.c.s
 .PHONY : src/token.c.s
 
 src/utils.o: src/utils.c.o
@@ -206,7 +230,7 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -214,7 +238,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -222,7 +246,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer.dir/build.make CMakeFiles/lexical_analyzer.dir/src/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexical_analyzer_v2.dir/build.make CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 # Help Target
@@ -233,7 +257,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lexical_analyzer"
+	@echo "... lexical_analyzer_v2"
+	@echo "... src/descent-parser.o"
+	@echo "... src/descent-parser.i"
+	@echo "... src/descent-parser.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

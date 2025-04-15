@@ -1,4 +1,4 @@
-CMakeFiles/lexical_analyzer.dir/src/main.c.o: \
+CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: \
  /home/leaf/Documents/Projects/lexical-analyzer/src/main.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \

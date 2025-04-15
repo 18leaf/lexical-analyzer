@@ -1,4 +1,5 @@
 #include "../include/token.h"
+#include "../include/descent-parser.h"
 /*
   if:
     stmt
@@ -10,42 +11,52 @@
 
 /*
  *
-KEYWORD[def]1:0 | IDENTIFIER[main]1:4 | PUNCTUATION[(]1:8 | PUNCTUATION[)]1:9 | PUNCTUATION[:]1:10
-
-IDENTIFIER[x]3:2 | OPERATOR[=]3:4 | NUM_LITERAL[20]3:6
-
-KEYWORD[print]4:2 | PUNCTUATION[(]4:7 | IDENTIFIER[x]4:8 | PUNCTUATION[)]4:9
-
-KEYWORD[if]6:2 | IDENTIFIER[x]6:5 | PUNCTUATION[>]6:7 | NUM_LITERAL[20]6:9 | PUNCTUATION[:]6:11
-
-KEYWORD[print]7:4 | PUNCTUATION[(]7:9 | STR_LITERAL["Greater than 20"]7:10 | PUNCTUATION[)]7:27
-
-KEYWORD[elif]8:2 | IDENTIFIER[x]8:7 | OPERATOR[=]8:9 | OPERATOR[=]8:10 | NUM_LITERAL[21]8:12 | PUNCTUATION[:]8:14
-
-KEYWORD[print]9:4 | PUNCTUATION[(]9:9 | STR_LITERAL["21"]9:10 | PUNCTUATION[)]9:14
-
-KEYWORD[else]10:2 | PUNCTUATION[:]10:6
-
-KEYWORD[print]11:4 | PUNCTUATION[(]11:9 | STR_LITERAL["Less Than 20"]11:10 | PUNCTUATION[)]11:24
-
+ * TODO print token that causes Error
  * */
 
-
-
-bool descentParser(struct token **TOKEN_ARR)
+bool descentParser(struct token *TOKEN_ARR, int token_count)
 {
-  // iterate through array of tokens, searching specifically for the if stmts, validate after them as well
-  // TODO add checking for python whitespace
-  // if (expr):\n\t(stmt)
-  // elif^
-  // else:\n\t(stmt)
-  // Iterate over tokens, Wait For select Keywords -> INItialize a state for that statement, if any unexpected, throw error
-  // follow rules
-  
   // START if -> wait for :\n\t
   // if \n before : ERror
   // if elif if, else, error
-  // must be if : stmt
-  //  
+   // must be if : stmt
+  
+
+   // if <expr> : \n<block>
+   // <block>
+   struct token curr;
+   int state = 0; // state represents section ie -> enter if state = 1, wait for :, keep iterating over tokens
+   for (int i = 0; i < token_count; i++)
+   {
+      curr = TOKEN_ARR[i];
+      switch (state)
+      {
+         // simply consume token
+         case 0:
+            // look for entry into new state -> if
+            if (curr.token_type == KEYWORD) // match for
+            {
+               printf("KEYWORD\n");
+               state = 1;
+            }
+            break;
+         case 1:
+            // keyword here search for next token
+            if (curr.token_type == PUNCTUATION)
+            {
+               printf("PUNCTUATION");
+               state = 0;
+            }
+            else if (curr.token_type == NEW_LINE)
+            {
+               printf("\nNEWLINE TOO EARLY INCORRRECT SYNTAx\n");
+               return false;
+            }
+            break;
+      }
+
+   }
+   return true;
+
 
 }

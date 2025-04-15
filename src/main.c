@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../include/scanner.h"
 #include "../include/utils.h"
-//#include "../include/descent-parser.h"
+#include "../include/descent-parser.h"
 
 struct token tokens[TOKEN_ARRAY_SIZE];
 // define keywords(only using example for now)
@@ -74,6 +74,11 @@ int main(const int argc, char *argv[]) {
 
 	const int token_count = run_scanner(file_ptr, keywordTrie);
 	print_tokens(token_count);
+
+   if (!descentParser(tokens, token_count))
+   {
+      return 0;
+   }
 
 
   // recursive descent parser
