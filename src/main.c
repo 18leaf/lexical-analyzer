@@ -77,6 +77,7 @@ int main(const int argc, char *argv[]) {
 
    if (!descentParser(tokens, token_count))
    {
+      printf("\n");
       return 0;
    }
 

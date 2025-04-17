@@ -1,7 +1,7 @@
 CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o: \
- /home/leaf/Documents/Projects/lexical-analyzer/src/scanner.c \
+ /home/leaf/projects/lexical-analyzer/src/scanner.c \
  /usr/include/stdc-predef.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/scanner.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/scanner.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -17,8 +17,8 @@ CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/../include/token.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/../include/utils.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/../include/token.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/../include/utils.h \
  /usr/include/string.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/token.h
+ /home/leaf/projects/lexical-analyzer/src/../include/token.h

@@ -73,7 +73,7 @@ int run_scanner(FILE *file, TrieNode *keywordTrie) {
 					|| line[char_pos] == '(' || line[char_pos] == ')'
 					|| line[char_pos] == '{' || line[char_pos] == '}'
 					|| line[char_pos] == '[' || line[char_pos] == ']'
-          || line[char_pos] == '<' || line[char_pos] == '>') {
+               || line[char_pos] == '<' || line[char_pos] == '>') {
 					current_token_type = PUNCTUATION;
 					tokens[token_pos] = init_token(line_number, lexeme_start);
 				}

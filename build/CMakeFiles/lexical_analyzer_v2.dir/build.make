@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leaf/Documents/Projects/lexical-analyzer
+CMAKE_SOURCE_DIR = /home/leaf/projects/lexical-analyzer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leaf/Documents/Projects/lexical-analyzer/build
+CMAKE_BINARY_DIR = /home/leaf/projects/lexical-analyzer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lexical_analyzer_v2.dir/depend.make
@@ -73,74 +73,74 @@ CMakeFiles/lexical_analyzer_v2.dir/codegen:
 .PHONY : CMakeFiles/lexical_analyzer_v2.dir/codegen
 
 CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: CMakeFiles/lexical_analyzer_v2.dir/flags.make
-CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: /home/leaf/Documents/Projects/lexical-analyzer/src/main.c
+CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: /home/leaf/projects/lexical-analyzer/src/main.c
 CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: CMakeFiles/lexical_analyzer_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o -c /home/leaf/Documents/Projects/lexical-analyzer/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o -c /home/leaf/projects/lexical-analyzer/src/main.c
 
 CMakeFiles/lexical_analyzer_v2.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexical_analyzer_v2.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/Documents/Projects/lexical-analyzer/src/main.c > CMakeFiles/lexical_analyzer_v2.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/projects/lexical-analyzer/src/main.c > CMakeFiles/lexical_analyzer_v2.dir/src/main.c.i
 
 CMakeFiles/lexical_analyzer_v2.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexical_analyzer_v2.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/Documents/Projects/lexical-analyzer/src/main.c -o CMakeFiles/lexical_analyzer_v2.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/projects/lexical-analyzer/src/main.c -o CMakeFiles/lexical_analyzer_v2.dir/src/main.c.s
 
 CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o: CMakeFiles/lexical_analyzer_v2.dir/flags.make
-CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o: /home/leaf/Documents/Projects/lexical-analyzer/src/token.c
+CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o: /home/leaf/projects/lexical-analyzer/src/token.c
 CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o: CMakeFiles/lexical_analyzer_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o -c /home/leaf/Documents/Projects/lexical-analyzer/src/token.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o -c /home/leaf/projects/lexical-analyzer/src/token.c
 
 CMakeFiles/lexical_analyzer_v2.dir/src/token.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexical_analyzer_v2.dir/src/token.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/Documents/Projects/lexical-analyzer/src/token.c > CMakeFiles/lexical_analyzer_v2.dir/src/token.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/projects/lexical-analyzer/src/token.c > CMakeFiles/lexical_analyzer_v2.dir/src/token.c.i
 
 CMakeFiles/lexical_analyzer_v2.dir/src/token.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexical_analyzer_v2.dir/src/token.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/Documents/Projects/lexical-analyzer/src/token.c -o CMakeFiles/lexical_analyzer_v2.dir/src/token.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/projects/lexical-analyzer/src/token.c -o CMakeFiles/lexical_analyzer_v2.dir/src/token.c.s
 
 CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o: CMakeFiles/lexical_analyzer_v2.dir/flags.make
-CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o: /home/leaf/Documents/Projects/lexical-analyzer/src/scanner.c
+CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o: /home/leaf/projects/lexical-analyzer/src/scanner.c
 CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o: CMakeFiles/lexical_analyzer_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o -c /home/leaf/Documents/Projects/lexical-analyzer/src/scanner.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o -c /home/leaf/projects/lexical-analyzer/src/scanner.c
 
 CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/Documents/Projects/lexical-analyzer/src/scanner.c > CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/projects/lexical-analyzer/src/scanner.c > CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.i
 
 CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/Documents/Projects/lexical-analyzer/src/scanner.c -o CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/projects/lexical-analyzer/src/scanner.c -o CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.s
 
 CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o: CMakeFiles/lexical_analyzer_v2.dir/flags.make
-CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o: /home/leaf/Documents/Projects/lexical-analyzer/src/utils.c
+CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o: /home/leaf/projects/lexical-analyzer/src/utils.c
 CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o: CMakeFiles/lexical_analyzer_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o -c /home/leaf/Documents/Projects/lexical-analyzer/src/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o -c /home/leaf/projects/lexical-analyzer/src/utils.c
 
 CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/Documents/Projects/lexical-analyzer/src/utils.c > CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/projects/lexical-analyzer/src/utils.c > CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.i
 
 CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/Documents/Projects/lexical-analyzer/src/utils.c -o CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/projects/lexical-analyzer/src/utils.c -o CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.s
 
 CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o: CMakeFiles/lexical_analyzer_v2.dir/flags.make
-CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o: /home/leaf/Documents/Projects/lexical-analyzer/src/descent-parser.c
+CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o: /home/leaf/projects/lexical-analyzer/src/descent-parser.c
 CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o: CMakeFiles/lexical_analyzer_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o -c /home/leaf/Documents/Projects/lexical-analyzer/src/descent-parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/leaf/projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o -MF CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o.d -o CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o -c /home/leaf/projects/lexical-analyzer/src/descent-parser.c
 
 CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/Documents/Projects/lexical-analyzer/src/descent-parser.c > CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leaf/projects/lexical-analyzer/src/descent-parser.c > CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.i
 
 CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/Documents/Projects/lexical-analyzer/src/descent-parser.c -o CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leaf/projects/lexical-analyzer/src/descent-parser.c -o CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.s
 
 # Object files for target lexical_analyzer_v2
 lexical_analyzer_v2_OBJECTS = \
@@ -161,7 +161,7 @@ lexical_analyzer_v2: CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o
 lexical_analyzer_v2: CMakeFiles/lexical_analyzer_v2.dir/build.make
 lexical_analyzer_v2: CMakeFiles/lexical_analyzer_v2.dir/compiler_depend.ts
 lexical_analyzer_v2: CMakeFiles/lexical_analyzer_v2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable lexical_analyzer_v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/leaf/projects/lexical-analyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable lexical_analyzer_v2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lexical_analyzer_v2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -173,6 +173,6 @@ CMakeFiles/lexical_analyzer_v2.dir/clean:
 .PHONY : CMakeFiles/lexical_analyzer_v2.dir/clean
 
 CMakeFiles/lexical_analyzer_v2.dir/depend:
-	cd /home/leaf/Documents/Projects/lexical-analyzer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leaf/Documents/Projects/lexical-analyzer /home/leaf/Documents/Projects/lexical-analyzer /home/leaf/Documents/Projects/lexical-analyzer/build /home/leaf/Documents/Projects/lexical-analyzer/build /home/leaf/Documents/Projects/lexical-analyzer/build/CMakeFiles/lexical_analyzer_v2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/leaf/projects/lexical-analyzer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leaf/projects/lexical-analyzer /home/leaf/projects/lexical-analyzer /home/leaf/projects/lexical-analyzer/build /home/leaf/projects/lexical-analyzer/build /home/leaf/projects/lexical-analyzer/build/CMakeFiles/lexical_analyzer_v2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/lexical_analyzer_v2.dir/depend
 

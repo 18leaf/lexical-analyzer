@@ -1,5 +1,5 @@
 CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: \
- /home/leaf/Documents/Projects/lexical-analyzer/src/main.c \
+ /home/leaf/projects/lexical-analyzer/src/main.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -16,8 +16,8 @@ CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/scanner.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/../include/token.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/../include/utils.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/utils.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/descent-parser.h
+ /home/leaf/projects/lexical-analyzer/src/../include/scanner.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/../include/token.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/../include/utils.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/utils.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/descent-parser.h

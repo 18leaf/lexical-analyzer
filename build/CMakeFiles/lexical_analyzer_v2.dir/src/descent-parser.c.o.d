@@ -1,10 +1,7 @@
 CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o: \
- /home/leaf/Documents/Projects/lexical-analyzer/src/descent-parser.c \
+ /home/leaf/projects/lexical-analyzer/src/descent-parser.c \
  /usr/include/stdc-predef.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/token.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/descent-parser.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/../include/token.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/../include/utils.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdbool.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -19,4 +16,10 @@ CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o: \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h
+ /usr/include/bits/floatn-common.h /usr/include/string.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/token.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/descent-parser.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/../include/token.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/../include/utils.h

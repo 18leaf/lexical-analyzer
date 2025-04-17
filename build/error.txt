@@ -1,9 +1,0 @@
-def main():
-   if this:
-      then this
-   else:
-      this
-   if if:
-      above should cause error
-
-   return

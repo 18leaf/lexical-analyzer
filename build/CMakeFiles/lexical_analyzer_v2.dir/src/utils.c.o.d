@@ -1,7 +1,7 @@
 CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o: \
- /home/leaf/Documents/Projects/lexical-analyzer/src/utils.c \
+ /home/leaf/projects/lexical-analyzer/src/utils.c \
  /usr/include/stdc-predef.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/utils.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/utils.h \
  /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \

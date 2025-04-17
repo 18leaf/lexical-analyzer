@@ -1,7 +1,7 @@
 CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o: \
- /home/leaf/Documents/Projects/lexical-analyzer/src/token.c \
+ /home/leaf/projects/lexical-analyzer/src/token.c \
  /usr/include/stdc-predef.h \
- /home/leaf/Documents/Projects/lexical-analyzer/src/../include/token.h \
+ /home/leaf/projects/lexical-analyzer/src/../include/token.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \

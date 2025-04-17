@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/leaf/Documents/Projects/lexical-analyzer/src/descent-parser.c" "CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o.d"
-  "/home/leaf/Documents/Projects/lexical-analyzer/src/main.c" "CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o.d"
-  "/home/leaf/Documents/Projects/lexical-analyzer/src/scanner.c" "CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o.d"
-  "/home/leaf/Documents/Projects/lexical-analyzer/src/token.c" "CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o.d"
-  "/home/leaf/Documents/Projects/lexical-analyzer/src/utils.c" "CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o.d"
+  "/home/leaf/projects/lexical-analyzer/src/descent-parser.c" "CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/descent-parser.c.o.d"
+  "/home/leaf/projects/lexical-analyzer/src/main.c" "CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/main.c.o.d"
+  "/home/leaf/projects/lexical-analyzer/src/scanner.c" "CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/scanner.c.o.d"
+  "/home/leaf/projects/lexical-analyzer/src/token.c" "CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/token.c.o.d"
+  "/home/leaf/projects/lexical-analyzer/src/utils.c" "CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/src/utils.c.o.d"
   "" "lexical_analyzer_v2" "gcc" "CMakeFiles/lexical_analyzer_v2.dir/link.d"
   )
 
