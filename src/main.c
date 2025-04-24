@@ -74,18 +74,13 @@ int main(const int argc, char *argv[]) {
 
 	const int token_count = run_scanner(file_ptr, keywordTrie);
 	print_tokens(token_count);
+	printf("\n\n");
 
    if (!descentParser(tokens, token_count))
    {
-      printf("\n");
+      printf("\nCODE NOT ACCEPTED\n");
       return 0;
    }
-
-
-  // recursive descent parser
-  // pass reference to global variable
-  // return false if error, true if not
-  printf("\n");
 
 	return 1;
 }

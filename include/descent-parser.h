@@ -7,7 +7,7 @@
 #include <stdio.h>
   
 
-bool descentParser(struct token *TOKEN_ARR, int token_count);
+bool descentParser(struct token tokenv[], int tokenc);
 
 
 #endif // DESCENT_PARSER
