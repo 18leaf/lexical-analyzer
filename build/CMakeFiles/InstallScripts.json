@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/leaf/projects/lexical-analyzer/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
