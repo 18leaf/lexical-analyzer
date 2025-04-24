@@ -16,41 +16,6 @@ PSEUDOCODE/DESIGN HERE
 
 <else_block>->    "else" ":" "\n" <block>
 
-<named_expr> ":" "\n" <block> is going to be shared code
-<block> is shared code
-note empty will be handled like block -> implies end of if statement
-/// END GRAMMAR
-
-
-// BLOCK consume until [if, elif, else] -> keywords that indicate presence of if stmt grammar => note that elif or else before if is invalid, so check here
-//    
-// PARSE IF
-//    IF is found, start the grammar descent
-//    parse named expression
-//    expect ":"
-//    expect "\n"
-//    parse block
-//    parse if next
-//    
-// PARSE NAMED EXPR
-//    NAMED EXPR START
-//    expect (IDENTIFIER || NUM_LIT || STR_LIT)
-//    expect OPERATOR token
-//    check for one more operator token (in case == != <= etc) (i only wrote to detect 1 operator like < > etc in scanner)
-//    expect (IDENTIFIER || NUM_LIT || STR_LIT)
-//
-// PARSE BLOCK
-//    
-//    
-//
-//
-//
-//   must be "if" consumethis until -> : \n -> <block>
-//          case "if"
-//             go above cal
-//          case "elif"
-//
-//          case "else"
  * */
 
 
